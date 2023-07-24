@@ -1,0 +1,227 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x:hidden; 
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url('R.jpeg');
+  background-repeat:repeat-y;
+  background-size:100%;
+}
+
+section.page_header {
+  display: flex;
+  height:12vh;
+  flex-grow: 1;
+  justify-content: center;
+  border: 2px solid #787878;
+  border-radius: 10px;
+  /* round corners */
+  box-shadow: 0px 1px 5px 1px #757575;
+  /* add shadow */
+  background-image: url('graph-market-thinkstock.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+}
+input.menu{
+  width:100px;
+  height:90px;
+}
+
+h1#heading {
+  text-align: center;
+  font-size:30px;
+  color: #ffffff;
+  flex-grow: 8;
+
+}
+
+img.pfp {
+  height: 70px;
+  width: 70px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  /* margin: 10px; */
+  border-radius: 50%;
+}
+#news{
+  height:70vh;
+  width:20vw;
+  justify-content:left;
+}
+#username {
+  font-size: 20px;
+  vertical-align: text-bottom;
+  color: white;
+  }
+
+#profile{
+  justify-content: center;
+  flex-grow:0.1;
+}
+#profiles{
+  justify-content: center;
+  flex-grow:1.9;
+}
+
+
+div.main{
+  height: 100%;
+}
+div.row{
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+}
+div.columns {
+  float:right;
+  width: 19%;
+  border:2px solid #787878;
+  border-radius:10px;
+  /* round corners */
+  box-shadow:0px 1px 5px 1px #757575;
+  padding: 1%;
+
+  /* From https://css.glass */
+background: rgba(0, 0, 0, 0.52);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
+
+
+
+
+
+  
+}
+div.column {
+  /* float:left; */
+  width: 80%;
+  height:100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+div.News_header{
+  font-size: 30px;
+  border-bottom:2px solid #787878;
+  /* border-radius:10px; */
+  /* round corners */
+  padding: 0px;
+  padding-bottom: 5px;  
+}
+div.News_header_sud{
+  font-size: 20px;
+  
+}
+div.News_Body{
+  overflow:auto;
+  height: 92.5vh;
+  font-size: 13px;
+  scrollbar-color: black;
+}
+input.search {
+  border: 3px solid lightblue;
+  height: 40px;
+  width: 500px;
+  border-radius: 50px;
+  padding: 0px 10px;
+}
+.btn i {
+  color: black;
+}
+.btn {
+  margin-left: -40px; 
+}
+.main_search {
+  margin:20px;
+  margin-bottom: 2px;
+}
+.Market {
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid white;
+  border-radius:10px;
+  /* round corners */
+}
+
+.Market:hover {
+  background-color: #000000;
+  color: white;
+  border: 2px solid black;
+}
+.login {
+  padding: 6px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid white;
+  border-radius:10px;
+  /* round corners */
+}
+
+.login:hover {
+  background-color: #000000;
+  color: red;
+  border: 2px solid black;
+}
+a{
+ color: #ff0000; 
+ text-decoration:none;
+}
+div.tradingview-widget-container{
+  width: 600px;
+  height:270px;
+  margin: 0;
+  padding: 1em;
+  float:left;
+}
+div.main_stock{ 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.stockView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1350px){
+  .stockView{
+    flex-direction: column; 
+  }
+}
+
+
+div.stocks_2{
+  float:left;
+  
+}
+
+
+

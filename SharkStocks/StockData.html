@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sharkstocks</title>
+  <link href="StockData.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="nav-with-background">
+    <div class="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="85" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 18h18v-2H3v2zM3 6v2h18V6H3z" />
+      </svg>
+    </div>
+    <div class="left">
+      <span class="stocks">Stocks</span>
+    </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://sharkstocks.nicholasr74.repl.co/" rel="noopener nofollow"
+        target="_blank"><span class="lightblue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+      {
+        "symbols": [
+          {
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500"
+          },
+          {
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100"
+          },
+          {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR to USD"
+          },
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+          }
+        ],
+          "colorTheme": "dark",
+            "isTransparent": false,
+              "showSymbolLogo": true,
+                "locale": "en"
+      }
+    </script>
+  </div>
+
+
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="videoplasty-18354-streaming-data-and-countdown-motion-graphics-pdp.mp4" type="video/mp4">
+  </video>
+
+  <div class="main">
+    <input type="text" name="box" placeholder="search companies...">
+    <a href="#" class="btn"><i class="fa fa-search"></i></a>
+  </div>
+
+  <!-- <br>
+
+  <br>
+
+  <br>
+
+  <br>
+
+  <br>
+
+  <br> -->
+
+  <br>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+  </style>
+
+
+
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright" rel="noopener nofollow" target="_blank"><span
+        class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+      async>
+        {
+          "title": "Stocks",
+            "width": 770,
+              "height": 450,
+                "locale": "en",
+                  "showSymbolLogo": true,
+                    "symbolsGroups": [
+                      {
+                        "name": "Financial",
+                        "symbols": [
+                          {
+                            "name": "NYSE:JPM",
+                            "displayName": "Jpmorgan Chase & Co"
+                          },
+                          {
+                            "name": "NYSE:WFC",
+                            "displayName": "Wells Fargo Co New"
+                          },
+                          {
+                            "name": "NYSE:BAC",
+                            "displayName": "Bank Amer Corp"
+                          },
+                          {
+                            "name": "NYSE:HSBC",
+                            "displayName": "Hsbc Hldgs Plc"
+                          },
+                          {
+                            "name": "NYSE:C",
+                            "displayName": "Citigroup Inc"
+                          },
+                          {
+                            "name": "NYSE:MA",
+                            "displayName": "Mastercard Incorporated"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Technology",
+                        "symbols": [
+                          {
+                            "name": "NASDAQ:AAPL",
+                            "displayName": "Apple"
+                          },
+                          {
+                            "name": "NASDAQ:GOOGL",
+                            "displayName": "Google Inc"
+                          },
+                          {
+                            "name": "NASDAQ:MSFT",
+                            "displayName": "Microsoft Corp"
+                          },
+                          {
+                            "name": "NASDAQ:FB",
+                            "displayName": "Meta Platforms, Inc"
+                          },
+                          {
+                            "name": "NYSE:ORCL",
+                            "displayName": "Oracle Corp"
+                          },
+                          {
+                            "name": "NASDAQ:INTC",
+                            "displayName": "Intel Corp"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Services",
+                        "symbols": [
+                          {
+                            "name": "NASDAQ:AMZN",
+                            "displayName": "Amazon Com Inc"
+                          },
+                          {
+                            "name": "NYSE:BABA",
+                            "displayName": "Alibaba Group Hldg Ltd"
+                          },
+                          {
+                            "name": "NYSE:T",
+                            "displayName": "At&t Inc"
+                          },
+                          {
+                            "name": "NYSE:WMT",
+                            "displayName": "Wal-mart Stores Inc"
+                          },
+                          {
+                            "name": "NYSE:V",
+                            "displayName": "Visa Inc"
+                          }
+                        ]
+                      }
+                    ],
+                      "colorTheme": "dark"
+        }
+      </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <br>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div id="tradingview_e6110"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+        target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget(
+        {
+          "width": 1000,
+          "height": 500,
+          "symbol": "NASDAQ:AAPL",
+          "interval": "D",
+          "timezone": "America/New_York",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "gridColor": "rgba(0, 0, 0, 0.06)",
+          "allow_symbol_change": true,
+          "container_id": "tradingview_e6110"
+        }
+      );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+
+  <br>
+
+
+
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://sharkstocks.nicholasr74.repl.co/" rel="noopener nofollow"
+        target="_blank"><span class="blah">Shark Stocks</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+      async>
+        {
+          "symbols": [
+            [
+              "Apple",
+              "AAPL|1D"
+            ],
+            [
+              "Google",
+              "GOOGL|1D"
+            ],
+            [
+              "Microsoft",
+              "MSFT|1D"
+            ]
+          ],
+            "chartOnly": false,
+              "width": 1000,
+                "height": 500,
+                  "locale": "en",
+                    "colorTheme": "dark",
+                      "autosize": false,
+                        "showVolume": false,
+                          "showMA": false,
+                            "hideDateRanges": false,
+                              "hideMarketStatus": false,
+                                "hideSymbolLogo": false,
+                                  "scalePosition": "right",
+                                    "scaleMode": "Normal",
+                                      "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                        "fontSize": "10",
+                                          "noTimeScale": false,
+                                            "valuesTracking": "1",
+                                              "changeMode": "price-and-percent",
+                                                "chartType": "area",
+                                                  "maLineColor": "#2962FF",
+                                                    "maLineWidth": 1,
+                                                      "maLength": 9,
+                                                        "lineWidth": 2,
+                                                          "lineType": 0,
+                                                            "dateRanges": [
+                                                              "1d|1",
+                                                              "1m|30",
+                                                              "3m|60",
+                                                              "12m|1D",
+                                                              "60m|1W",
+                                                              "all|1M"
+                                                            ]
+        }
+      </script>
+  </div>
+
+
+  <p class="market">Markets Now</p>
+
+
+
+</body>
+</div>
+</div>
+
+</body>
+</div>
+</div>
+</body>
+
+</html>
